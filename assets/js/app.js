@@ -25,8 +25,6 @@ var svg = d3
   .attr("class", "chart");
 
 // Set the radius for each dot that will appear in the graph.
-// Note: Making this a function allows us to easily call
-// it in the mobility section of our code.
 var circRadius;
 function crGet() {
   if (width <= 530) {
@@ -49,8 +47,6 @@ svg.append("g").attr("class", "xText");
 var xText = d3.select(".xText");
 
 // We give xText a transform property that places it at the bottom of the chart.
-// By nesting this attribute in a function, we can easily change the location of the label group
-// whenever the width of the window changes.
 function xTextRefresh() {
   xText.attr(
     "transform",
