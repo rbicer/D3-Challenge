@@ -143,7 +143,7 @@ yText
 // by the Behavioral Risk Factor Surveillance System.
 
 // Import our CSV data with d3's .csv import method.
-d3.csv("https://raw.githubusercontent.com/rbicer/D3-Challenge/master/assets/data/data.csv?token=ARO2RXIEX55Q5ZVYU4DLSPLAPY774").then(function(data) {
+d3.csv("https://github.com/rbicer/D3-Challenge/blob/master/assets/data/data.csv").then(function(data) {
   // Visualize the data
   visualize(data);
 });
